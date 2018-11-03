@@ -8,21 +8,21 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Queue()
         {
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Register()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Registration";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Call()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Call queue number";
 
             return View();
         }
