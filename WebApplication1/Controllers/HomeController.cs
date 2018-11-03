@@ -10,20 +10,35 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Queue()
         {
+            ViewBag.Title = "Queue";
             return View();
         }
 
         public ActionResult Register()
         {
-            ViewBag.Message = "Registration";
+            ViewBag.Title = "Register";
 
             return View();
         }
 
         public ActionResult Call()
         {
-            ViewBag.Message = "Call queue number";
+            ViewBag.Title = "Call";
 
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult RegR()
+        {
+
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult RegW()
+        {
             return View();
         }
     }
